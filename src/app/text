@@ -1,0 +1,4 @@
+first make service file using this command: ng g s service-name
+them import it into the component file where you want to use that service.
+fetch the details from api in service file using observables.
+then use this service method in component file

@@ -1,0 +1,442 @@
+/* ye title or button or puri body m jo bhi content h uske font-size of font-family ko manage krega */
+body {
+  font-size: 14px;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* this css is used for showing the background image  */
+.page-header .page-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-header .container {
+  z-index: 2;
+}
+
+
+/* this css is used for background image ko pure page pr failane  ko or 
+    jo bhi text exist kr rha h front pr usko center m krne ko
+    z-index is all about visibility of content */
+.page-header .container {
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+}
+
+.container .content-center .btn-primary {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+
+/* this css is used for styling the profile image */
+.profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 270px;
+  width: 220px;
+  padding: 0;
+  /* margin top se image or navbar ke beech m distance aa gya */
+  margin-top: 70px; 
+  border: 15px solid transparent;
+}
+
+/* this css is used for changing the background color of buttons */
+.btn-primary {
+  background-color: black;
+  border-color: black;
+}
+
+/* isse hire me or download resume button ki width handle hogi
+.page-header .btn {
+  width: 200px;
+} */
+
+
+.navbar.navbar-transparent {
+  /* this bg color step jo navbar ka jo box sa banta  usko hta dega */
+  /* background-color: transparent !important; */
+  padding-top: 20px;
+}
+
+
+/* ye navbars links ke font size or particular navbar ke letters ke beech m spacing dega */
+.navbar {
+  font-size: 18px;
+  letter-spacing: 1px;
+} 
+
+/* isse navbar links ka color change ho jayega */
+.navbar-nav .nav-item .nav-link {
+  color: grey;
+}
+
+/* isse profile title ka font color change ho jayega */
+.navbar-translate .navbar-brand {
+  color: grey;
+}
+
+.section {
+  padding-bottom: 0;
+}
+/* isse logos or about content ke beeech m space mil jayega */
+.section {
+  padding: 1px 0;
+  position: relative;
+  background: #FFFFFF;
+}
+
+/* isse wo logos aadha background m or aadha section mtlb line ke beech m dhikhenge */
+.profile-page .button-container {
+  text-align: center;
+  margin-top: -25px;
+}
+
+.btn .btn-icon .btn-lg {
+  height: 3.6rem;
+  min-width: 3.6rem;
+  width: 3.6rem;
+}
+
+/* Profile Page Social button Style */
+.button-container .btn-default {
+  margin-right: 8px;
+}
+
+/* .btn .btn-icon {
+  height: 2.375rem;
+  min-width: 2.375rem;
+  width: 2.375rem;
+  padding: 0;
+  font-size: 0.9375rem;
+  overflow: hidden;
+  position: relative;
+  line-height: normal;
+} */
+
+/* isse button rounded ho jayenge */
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px !important;
+}
+
+/* (>) ye sign use krne se sir inhi buttons ko handle krenge others buttons effect nh honge */
+.button-container > .btn {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 1.5em;
+  /* line-height: 1.35em; */
+  margin: 3px 20px;
+  /* margin-top,bottom=3, margin-left,right=20 isse icons ke beech m space mil gya*/
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+
+/* 1. [data-aos=fade-up] {
+    transform: translate3d(0,100px,0); - isse social media logos or about me card ke beech m automatic distance aa jayegi or for card to be visible opacity=1 honi chahiye
+    2. Border se wo card ki lag rha h
+    3. margin-bottom or box-shadow se about me or work exp ke beech m space mil gya
+} */
+.card {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 170px;
+  /* -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+  min-height: 190px;
+}
+
+/* isse about me ka font bada ho jayega */
+.title {
+  font-weight: 700;
+}
+
+/* isse about me or basic infoke beech m margin mil jayega */
+h4, .h4 {
+  font-size: 1.714em;
+  line-height: 1.45em;
+  margin-bottom: 15px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+/* isse pehli work exp handle hogi. space mil jayega beech m agar 2 se jayda exp honge to  */
+.timeline > li {
+  margin-bottom: 200px;
+  position: relative;
+}
+
+/* isse jo thumbs up icon dhikh rha h exp ke left m wo handle hoga, uska size,alignment etc */
+.timeline > li > .timeline-badge {
+  color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 13px;
+  
+  background-color: #666666;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  
+}
+
+/* isse thumbs up ka background color change hoga */
+.timeline-badge.up {
+  background-color: #488c6c !important;
+}
+
+/* isse work exp ke inside jo content likha h usko handle krega like uski width, card radius */
+.timeline > li > .timeline-panel {
+  /* calc is used when want to perform calculation using css it will calculate your width acc to content size */
+  width: calc( 100% - 55px );
+  float: right;
+  border: 1px solid #d4d4d4;
+  border-radius: 22px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+/* isse work exp ka title handle hoga */
+h5, .h5 {
+  font-size: 1.714em;
+  line-height: 1.45em;
+  margin-bottom: 15px;
+}
+
+/* isse designation handle hogi */
+h6, .h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.61em;
+}
+
+/* for projects section */
+.timeline-badge.down {
+  background-color: #e9662c !important;
+}
+
+/* isse har skills ke beech m gap mil jayega */
+.progress-container {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  position: relative;
+}
+
+/* isse har skills ka color uska font-size handle hoga */
+.progress-container .progress-badge {
+  color: Black;
+  font-size: 0.8571em;
+  text-transform: uppercase;
+}
+
+/* .progress-container .progress-primary .progress-bar {
+  background: black;
+} */
+
+/* isse progress bar ki height or jo percentage likhi h uski width kam hogi */
+.progress-container .progress {
+  height: 5px;
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+/* isse progress bar ka background color black hua h */
+.progress-container.progress-primary .progress-bar {
+  background: black;
+}
+
+/* isse percentage ki value handle hogi */
+.progress-container .progress .progress-value {
+  position: absolute;
+  /* top ki jitni jayda value hogi px m utna per value badge se kam dur jayegi */
+  top: 10px;
+  right: 0;
+  color: #888;
+  font-size: 1.5em;
+}
+
+/* isse degree ke jo title h wo black ho jayenge */
+.bg-primary { 
+  background-color: black !important;
+  /* width: 700px; */
+}
+
+
+
+/* Education Style */
+.cc-education .h5 {
+  margin-bottom: 0;
+}
+
+/* isse degree ka color change hoga */
+.cc-education .cc-education-header {
+  padding-top: 30px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* isse degree ke cards ke beech m space mil jayega */
+.cc-education .card {
+  /* margin: 100px; */
+  margin-bottom: 10px;
+}
+
+/* isse college/school ka name handle hoga */
+.category {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9A9A9A;
+}
+
+/* The + sign essentially applies a style to all the tags that come after the first selector.
+    ye clg name or degree ke beech m space kam krega */
+h4 + .category,
+h4.title + .category, .h4 + .category,
+.h4.title + .category {
+  margin-top: -10px;
+}
+
+/* isse contact me ka background handle hoga  */
+.cc-contact-information {
+  width: 100%;
+  position: relative;
+}
+
+/* isse contact form center m aa jayega */
+.cc-contact-information .cc-contact {
+  padding: 5% 0 8% 20%;
+}
+
+/* isse contact us ko sapce mil jayega upar se */
+.cc-contact-information .cc-contact .card .h4 {
+  /* padding: 30px; */
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+}
+
+/* isse name, subject inn fields ke beech m space mil jayega */
+.input-group,
+.form-group {
+  margin-bottom: 10px;
+}
+
+#contact {
+  padding: 70px 0;
+}
+
+/* isse contact me card ki height or width handle hogi */
+.cc-contact-information .card {
+  box-sizing: border-box;
+  width:970px;
+  height:780px;
+  padding:0px 0px 0px 15px;
+}
+
+/* isse contact me ka size handle hoga */
+.cc-contact-information .cc-contact .title {
+  font-size:35px;
+}
+
+/* isse jo p tag or ph no or email ka font size change hoga */
+.cc-contact-information .card-body {
+  font-size:25px;
+}
+/* isse text area your message handle hoga */
+textarea.form-control {
+  max-width: 100%;
+  padding: 10px 10px 0 0;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #E3E3E3;
+  border-radius:0;
+  line-height: 3;
+}
+
+/* isse saare input text fields manage honge */
+.form-control {
+  margin:10px;
+  background-color: transparent;
+  border: 1px solid #E3E3E3;
+  border-radius: 30px;
+  color: #2c2c2c;
+  line-height: normal;
+  font-size: 0.8571em;
+  /* -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-box-shadow: none; */
+  box-shadow: none;
+}
+
+
+/* isse jo input fields ka title start hone se pehle jo space hota h wo space mil jayega */
+.form-group .form-control,
+.input-group .form-control {
+  padding: 10px 18px 10px 18px;
+}
+
+/* isse Send button handle hoga */
+.cc-contact-information .cc-contact .btn.btn-primary {
+  font-size: 25px;
+  padding:15px 30px 15px 30px;
+  margin:50px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
