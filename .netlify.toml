@@ -1,6 +1,6 @@
 [build]
  command = "npm run build -- --configuration production"
- publish = "dist/portfolio"
+ publish = "dist/swati-portfolio"
  
 [build.environment]
  NODE_VERSION = "18.16.0"
