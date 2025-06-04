@@ -341,15 +341,15 @@ h4.title + .category, .h4 + .category,
 }
 
 /* isse contact form center m aa jayega */
-.cc-contact-information .cc-contact {
-  padding: 5% 0 8% 20%;
-}
+/* .cc-contact-information .cc-contact {
+  padding: 2% 0 2% 0;
+} */
 
 /* isse contact us ko sapce mil jayega upar se */
 .cc-contact-information .cc-contact .card .h4 {
   /* padding: 30px; */
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
 }
 
@@ -359,9 +359,9 @@ h4.title + .category, .h4 + .category,
   margin-bottom: 10px;
 }
 
-#contact {
+/* #contact {
   padding: 70px 0;
-}
+} */
 
 /* isse contact me card ki height or width handle hogi */
 .cc-contact-information .card {
